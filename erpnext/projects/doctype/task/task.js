@@ -12,7 +12,6 @@ frappe.ui.form.on("Task", {
 			})
 		}
 	},
-
 	onload: function (frm) {
 		frm.set_query("task", "depends_on", function () {
 			let filters = {

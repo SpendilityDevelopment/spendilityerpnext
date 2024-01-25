@@ -18,7 +18,7 @@ class RequestforQuotationItem(Document):
 		conversion_factor: DF.Float
 		description: DF.TextEditor | None
 		image: DF.Attach | None
-		item_code: DF.Link
+		item_code: DF.Link | None
 		item_group: DF.Link | None
 		item_name: DF.Data | None
 		material_request: DF.Link | None
@@ -29,11 +29,11 @@ class RequestforQuotationItem(Document):
 		parenttype: DF.Data
 		project_name: DF.Link | None
 		qty: DF.Float
-		schedule_date: DF.Date
+		schedule_date: DF.Date | None
 		stock_qty: DF.Float
-		stock_uom: DF.Link
+		stock_uom: DF.Link | None
 		supplier_part_no: DF.Data | None
-		uom: DF.Link
+		uom: DF.Link | None
 		warehouse: DF.Link | None
 	# end: auto-generated types
 
